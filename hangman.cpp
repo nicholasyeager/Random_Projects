@@ -109,14 +109,14 @@ int main(){
         cin >> input;
         checkWord(guess, input, &guesses, Word, &missingLetters);
         printGuess(guess);
-        cout << guesses << " guesses remaining" << endl;
-        cout << endl;
-
         if (guesses == -1){
             cout << "Better luck next time" << endl;
             break;
         }
-        else if (missingLetters == 0){
+        cout << guesses << " lives remaining" << endl;
+        cout << endl;
+
+        if (missingLetters == 0){
             cout << "You did it!!!" << endl;
             break;
         }
