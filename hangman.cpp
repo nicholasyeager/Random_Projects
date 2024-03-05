@@ -111,6 +111,7 @@ int main(){
         printGuess(guess);
         if (guesses == -1){
             cout << "Better luck next time" << endl;
+            cout << "The word was: " << Word << endl;
             break;
         }
         cout << guesses << " lives remaining" << endl;
@@ -118,6 +119,7 @@ int main(){
 
         if (missingLetters == 0){
             cout << "You did it!!!" << endl;
+            cout << "The word was: " << Word << endl;
             break;
         }
     }
