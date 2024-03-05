@@ -51,11 +51,9 @@ void checkWord(vector<char> &guess, char input, int *guesses, string Word, int *
         }
     }
     if (!found){
-            (*guesses)--;
+        (*guesses)--;
     }
 }
-
-
 
 int main(){
     string Word;
@@ -112,13 +110,13 @@ int main(){
         checkWord(guess, input, &guesses, Word, &missingLetters);
         printGuess(guess);
         cout << guesses << " guesses remaining" << endl;
+        cout << endl;
 
         if (guesses == -1){
             cout << "Better luck next time" << endl;
             break;
         }
         else if (missingLetters == 0){
-            cout << endl;
             cout << "You did it!!!" << endl;
             break;
         }
